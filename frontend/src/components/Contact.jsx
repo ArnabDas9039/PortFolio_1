@@ -1,6 +1,3 @@
-import XIcon from "@mui/icons-material/X";
-import { Box } from "@mui/material";
-
 export function Contact() {
   return (
     <section
