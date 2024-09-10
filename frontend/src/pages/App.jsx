@@ -7,25 +7,25 @@ import { Skills } from "../components/Skills";
 import "../styles/General.css";
 
 function App() {
-  // useEffect(() => {
-  //   const trigger = document.querySelector("section");
+  useEffect(() => {
+    const trigger = document.querySelector("body");
 
-  //   trigger.addEventListener("mousemove", function (e) {
-  //     const smoke = document.createElement("div");
-  //     smoke.classList.add("smoke");
-  //     document.body.appendChild(smoke);
+    trigger.addEventListener("mousemove", function (e) {
+      const smoke = document.createElement("div");
+      smoke.classList.add("smoke");
+      document.body.appendChild(smoke);
 
-  //     const x = e.clientX - trigger.getBoundingClientRect().left;
-  //     const y = e.clientY - trigger.getBoundingClientRect().top;
+      const x = e.clientX - trigger.getBoundingClientRect().left;
+      const y = e.clientY - trigger.getBoundingClientRect().top;
 
-  //     smoke.style.left = `${x}px`;
-  //     smoke.style.top = `${y}px`;
+      smoke.style.left = `${x}px`;
+      smoke.style.top = `${y}px`;
 
-  //     setTimeout(() => {
-  //       smoke.remove();
-  //     }, 3000);
-  //   });
-  // }, []);
+      setTimeout(() => {
+        smoke.remove();
+      }, 3000);
+    });
+  }, []);
   return (
     <>
       <Navigation />

@@ -3,8 +3,6 @@ import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/Navigation.css";
 
-// #034159 #025951 #02735E #038C3E #0CF25D
-
 export function Navigation() {
   const [value, setValue] = useState(0);
 
